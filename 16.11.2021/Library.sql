@@ -57,12 +57,6 @@ INSERT INTO BookType VALUES
 ('4', '4'),
 ('5', '5')
 
-
-SELECT * FROM Authors
-SELECT * FROM Books
-SELECT * FROM Types
-SELECT * FROM BookType
-
 SELECT b.Name 'Book Name',b.PublicationYear 'Publication Year', b.EditionNumber 'Edition Number', a.Name+' '+ a.Surname+' '+ a.Nickname 'Full Name', t.Type 
 FROM Books b 
 LEFT JOIN Authors a ON b.BookAuthorId = a.Id 
